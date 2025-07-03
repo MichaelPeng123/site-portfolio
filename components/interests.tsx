@@ -1,4 +1,5 @@
 import { Music, Book, Plane, Camera, Code, Coffee } from "lucide-react"
+import Image from "next/image"
 
 // Sample interests - replace with your own
 const interests = [
@@ -35,6 +36,9 @@ const interests = [
 ]
 
 export default function Interests() {
+  const photos = [
+    "p1.jpeg", "p2.jpeg", "p3.jpeg", "p4.jpeg", "p5.jpeg", "p6.jpeg", "p7.jpeg", "p8.jpeg", "p9.jpeg", "p10.jpeg", "p11.jpeg", "p12.jpeg", "p13.jpeg", "p14.jpeg", "p15.jpeg", "p16.jpeg", "p17.jpeg", "p18.jpeg", "p19.jpeg", "p20.jpeg", "p21.jpeg", "p22.jpeg"
+  ];
   return (
     <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold mb-12 text-center">Interests</h2>
@@ -46,9 +50,26 @@ export default function Interests() {
             <h3 className="font-medium text-lg tracking-tight">{interest.title}</h3>
             <p className="text-gray-600 mt-2 leading-relaxed">{interest.description}</p>
           </div>
-
         </div>
       ))}
+      </div>
+      {/* Photo Gallery */}
+      <div className="mt-16">
+        <h3 className="text-2xl font-bold mb-6 text-center">Photo Gallery</h3>
+        {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {photos.map((photo) => (
+            <div key={photo} className="relative aspect-[4/3] rounded-lg overflow-hidden group">
+              <Image
+                src={`/photos/${photo}`}
+                alt={photo}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                priority={false}
+              />
+            </div>
+          ))}
+        </div> */}
       </div>
     </div>
   )

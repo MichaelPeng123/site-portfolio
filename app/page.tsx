@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
           <p className="mb-8 max-w-xl mx-auto text-gray-300">Have an idea that you want to discuss? Feel free to reach out!</p>
           <Link
-            href="mailto:your-email@example.com"
+            href="mailto:mpeng893@g.ucla.edu"
             className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 rounded-md hover:bg-gray-200 transition-colors"
           >
             Contact Me <ArrowRight className="h-4 w-4" />
