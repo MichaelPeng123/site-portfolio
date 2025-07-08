@@ -64,7 +64,7 @@ export default function PillNav() {
         <div className="w-6 h-px bg-gray-700"></div>
         
         <Link 
-          href="#contact" 
+          href="/#contact" 
           className="p-3 hover:bg-gray-800 rounded-b-full transition-colors flex items-center justify-center"
           aria-label="Contact"
         >
